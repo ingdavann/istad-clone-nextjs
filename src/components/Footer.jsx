@@ -17,9 +17,9 @@ export default function Footer() {
                             <h2 class="inline-block text-2xl pb-4 mb-4 font-bold">LEARN MORE</h2>
                         </div>
                         <ul class="leading-8">
-                            <li><a href="#" class="hover:text-blue-400">Course</a></li>
-                            <li><a href="#" class="hover:text-blue-400">IT New</a></li>
-                            <li><a href="#" class="hover:text-blue-400">Jon Opportunity</a></li>
+                            <li><a href="/course" class="hover:text-blue-400">Course</a></li>
+                            <li><a href="" class="hover:text-blue-400">IT New</a></li>
+                            <li><a href="#" class="hover:text-blue-400">Job Opportunity</a></li>
                             <li><a href="#" class="hover:text-blue-400">Privacy Policy</a></li>
                             <li><a href="#" class="hover:text-blue-400">FQA</a></li>
                         </ul>
