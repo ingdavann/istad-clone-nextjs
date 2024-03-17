@@ -2,52 +2,48 @@ import React from 'react'
 
 export default function Carousel() {
   return (
-    <section class="max-w-full mx-auto">
-        <div id="default-carousel" class="relative overflow-hidden" data-carousel="static">
-            {/* <!-- Carousel wrapper --> */}
-            <div class="relative h-80 md:h-screen" data-carousel-inner>
-                {/* <!-- Item 1 --> */}
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="https://www.jonesday.com/-/media/files/publications/2019/05/when-coding-is-criminal/when-coding-is-criminal.jpg?rev=7daa2e80878c4c119b1b3cf1d5864271&hash=2AFE58E34713714383DC16573947705B"
-                        class="object-cover w-full h-full" alt="Slide 1"/>
-                </div>
-                {/* <!-- Item 2 --> */}
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="https://www.jonesday.com/-/media/files/publications/2019/05/when-coding-is-criminal/when-coding-is-criminal.jpg?rev=7daa2e80878c4c119b1b3cf1d5864271&hash=2AFE58E34713714383DC16573947705B"
-                        class="object-cover w-full h-full" alt="Slide 2"/>
-                </div>
-                {/* <!-- Item 3 --> */}
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="https://www.jonesday.com/-/media/files/publications/2019/05/when-coding-is-criminal/when-coding-is-criminal.jpg?rev=7daa2e80878c4c119b1b3cf1d5864271&hash=2AFE58E34713714383DC16573947705B"
-                        class="object-cover w-full h-full" alt="Slide 3"/>
-                </div>
+    <section id="default-carousel" className="relative w-full" data-carousel="slide">
+        {/* <!-- Carousel wrapper --> */}
+        <div className="relative h-56 overflow-hidden md:h-screen">
+            {/* <!-- Item 1 --> */}
+            <div className="duration-700 ease-in-out" data-carousel-item>
+                <img src="https://cdn.mos.cms.futurecdn.net/9QTpESGBXa32D29J77VR3d-1200-80.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
             </div>
-            {/* <!-- Slider indicators --> */}
-            <div class="flex absolute bottom-5 left-1/2 z-30 -translate-x-1/2 space-x-2" data-carousel-indicators>
-                <button type="button" class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 focus:outline-none focus:bg-gray-400 transition"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 focus:outline-none focus:bg-gray-400 transition"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 focus:outline-none focus:bg-gray-400 transition"></button>
+            {/* <!-- Item 2 --> */}
+            <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2021_12_Learn-Networking-from-Scratch.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
             </div>
-            {/* <!-- Slider controls --> */}
-            <button type="button"
-                class="flex absolute top-1/2 left-3 z-40 items-center justify-center w-10 h-10 bg-gray-200/50 rounded-full hover:bg-gray-300 focus:outline-none transition"
-                data-carousel-prev>
-                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-            </button>
-            <button type="button"
-                class="flex absolute top-1/2 right-3 z-40 items-center justify-center w-10 h-10 bg-gray-200/50 rounded-full hover:bg-gray-300 focus:outline-none transition"
-                data-carousel-next>
-                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </button>
+            {/* <!-- Item 3 --> */}
+            <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/docs/images/carousel/carousel-3.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+            </div>
+            
         </div>
-    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-</section>
+        {/* <!-- Slider indicators --> */}
+        <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+        {/* <!-- Slider controls --> */}
+        <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span className="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
 
+    </section>
+    
   )
 }
