@@ -11,15 +11,14 @@ export default function Footer() {
                             <span class="ml-2">Start your IT career with CSTAD</span>
                         </a>
                     </div>
-
                     <div class="px-4 my-4 w-full sm:w-auto">
                         <div>
                             <h2 class="inline-block text-2xl pb-4 mb-4 font-bold">LEARN MORE</h2>
                         </div>
                         <ul class="leading-8">
                             <li><a href="/course" class="hover:text-blue-400">Course</a></li>
-                            <li><a href="" class="hover:text-blue-400">IT New</a></li>
-                            <li><a href="#" class="hover:text-blue-400">Job Opportunity</a></li>
+                            <li><a href="/news" class="hover:text-blue-400">IT New</a></li>
+                            <li><a href="/job" class="hover:text-blue-400">Job Opportunity</a></li>
                             <li><a href="#" class="hover:text-blue-400">Privacy Policy</a></li>
                             <li><a href="#" class="hover:text-blue-400">FQA</a></li>
                         </ul>
@@ -32,10 +31,10 @@ export default function Footer() {
                             <ul class="leading-8">
                                 <li><a href="#" class="hover:text-blue-400">(+855) 95-990-910</a></li>
                                 <li><a href="#" class="hover:text-blue-400">(+855) 93-990-910</a></li>
-                                <li><a href="#" class="hover:text-blue-400">Jon Opportunity</a></li>
                             </ul>
                         </address>
                     </div>
+                    
                 </div>
             </div>
             </div>
@@ -44,6 +43,6 @@ export default function Footer() {
                     © 2024 Center of Science and Technology Advanced Development | All Rights Reserved
                 </div>
             </div>
-  </footer>
+    </footer>
   )
 }
